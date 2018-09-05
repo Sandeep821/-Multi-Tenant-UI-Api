@@ -1,0 +1,13 @@
+{ "msg": "msg from Data API for Style config",
+    "site": {
+      "name": "audiUsa",
+      "style": {
+        "logo" : {
+          "direction":"left"
+        },
+        "nav" : {
+          "direction":"right"
+        }
+      }
+    }
+  }
