@@ -4,7 +4,8 @@
   "description": "demo api for react app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node --presets=/*a*/ --ignore='foo|bar|baz'"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "express": "^4.16.3"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "nodemon": "^1.18.4"
   }
 }

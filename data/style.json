@@ -1,13 +1,33 @@
-{ "msg": "msg from Data API for Style config",
-    "site": {
-      "name": "audiUsa",
-      "style": {
-        "logo" : {
-          "direction":"left"
-        },
-        "nav" : {
-          "direction":"right"
-        }
+[{ 
+  "tenantName": "audiUsa",
+  "tenantId": "001",
+  "msg": "msg from Data API for Style config",
+  "site": {
+    "name": "audiUsa",
+    "style": {
+      "logo" : {
+        "direction":"left"
+      },
+      "nav" : {
+        "direction":"right"
       }
     }
   }
+},
+{ 
+  "tenantName": "bugatti",
+  "tenantId": "002",
+  "msg": "msg from Data API for Style config",
+  "site": {
+    "name": "bugatti",
+    "style": {
+      "logo" : {
+        "direction":"right"
+      },
+      "nav" : {
+        "direction":"left"
+      }
+    }
+  }
+}
+]
