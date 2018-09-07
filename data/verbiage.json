@@ -1,13 +1,30 @@
-{ "msg": "msg from Data API for Verbiage config",
-    "site": {
-      "name": "audiUsa",
-      "style": {
-        "logo" : {
-          "direction":"left"
-        },
-        "nav" : {
-          "direction":"right"
-        }
-      }
-    }
-  }
+[{ "tenantName": "audiUsa",
+  "tenantId": "001",
+  "msg": "msg from Data API for Style config",
+  "bannerheading" : "Explore myAudi",
+  "banners" : [{
+    "title": "Account Management",
+     "image" :"account.jpg"
+  }, {
+    "title": "Vehicle Details",
+     "image" :"vehicle.jpg"
+  }, {
+    "title": "Exclusive benefits & Content",
+     "image" :"exclusive.jpg"
+  }]
+  },
+  { "tenantName": "bugatti",
+    "tenantId": "002",
+    "msg": "msg from Data API for Style config",
+    "bannerheading" : "Explore muBugatti",
+    "banners" : [{
+      "title": "Account Management",
+       "image" :"account.jpg"
+    }, {
+      "title": "Vehicle Details",
+       "image" :"vehicle.jpg"
+    }, {
+      "title": "Exclusive benefits & Content",
+       "image" :"exclusive.jpg"
+    }]
+    }]
