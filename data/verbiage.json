@@ -1,30 +1,35 @@
-[{ "tenantName": "audiUsa",
-  "tenantId": "001",
-  "msg": "msg from Data API for Style config",
-  "bannerheading" : "Explore myAudi",
-  "banners" : [{
-    "title": "Account Management",
-     "image" :"account.jpg"
-  }, {
-    "title": "Vehicle Details",
-     "image" :"vehicle.jpg"
-  }, {
-    "title": "Exclusive benefits & Content",
-     "image" :"exclusive.jpg"
-  }]
+[{  "tenantName": "audiUsa",
+    "tenantId": "001",
+    "msg": "msg from Data API for Style config",
+      "details":  {
+        "bannerheading": "Explore myAudi",
+        "banners": [{
+          "title": "Account Management",
+          "image": "account.jpg"
+        }, {
+          "title": "Vehicle Details",
+          "image": "vehicle.jpg"
+        }, {
+          "title": "Exclusive benefits & Content",
+          "image": "exclusive.jpg"
+        }]
+      }
   },
-  { "tenantName": "bugatti",
+  {  "tenantName": "buggati",
     "tenantId": "002",
     "msg": "msg from Data API for Style config",
-    "bannerheading" : "Explore muBugatti",
-    "banners" : [{
-      "title": "Account Management",
-       "image" :"account.jpg"
-    }, {
-      "title": "Vehicle Details",
-       "image" :"vehicle.jpg"
-    }, {
-      "title": "Exclusive benefits & Content",
-       "image" :"exclusive.jpg"
-    }]
-    }]
+      "details":  {
+        "bannerheading": "Explore myBuggati",
+        "banners": [{
+          "title": "Account Management",
+          "image": "account.jpg"
+        }, {
+          "title": "Vehicle Details",
+          "image": "vehicle.jpg"
+        }, {
+          "title": "Exclusive benefits & Content",
+          "image": "exclusive.jpg"
+        }]
+      }
+  }
+]
