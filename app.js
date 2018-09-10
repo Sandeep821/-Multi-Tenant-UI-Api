@@ -4,7 +4,7 @@ const path = require('path');
 
 //data
 var styleConfig = require("./data/style.json");
-var elementConfig = require("./data/style.json");
+var elementConfig = require("./data/element.json");
 var verbiageConfig = require("./data/verbiage.json");
 
 app.use(function(req, res, next) { res.header("Access-Control-Allow-Origin", "*"); res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); next(); });
@@ -26,8 +26,15 @@ app.get('/', (req, res) => res.send('DEMO API!'))
         return  res.status(200).json(styleDataResult);
     });
     
-    app.get('/api/element-config', (req, res) =>{
-        return  res.status(200).json(elementConfig);
+    app.get('/api/element-config/:tenantId', (req, res) =>{ 
+        var tenantId = req.params.tenantId;
+        let elementConfigResult;
+        elementConfig.forEach(function(data) {
+            if(data.tenantId === tenantId) {
+                elementConfigResult = data;
+            }
+        });
+        return  res.status(200).json(elementConfigResult);
     });
     
     app.get('/api/verbiage-config/:tenantId', (req, res) =>{

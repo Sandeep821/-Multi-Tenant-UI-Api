@@ -1,13 +1,35 @@
-{ "msg": "msg from Data API for Element config",
-    "site": {
-      "name": "audiUsa",
-      "style": {
-        "logo" : {
-          "direction":"left"
-        },
-        "nav" : {
-          "direction":"right"
-        }
-      }
+[{"tenantName": "audiUsa",
+  "tenantId": "001",
+  "msg": "msg from Data API for element config",
+    "details":  {
+      "bannerheading": "Explore myAudi",
+      "bannersData": [{
+        "title": "Account Management",
+        "image":  "https://s7d9.scene7.com/is/image/Audiusastaging/audi-lifestyle-015?wid=307&fit=constrain"
+      }, {
+        "title": "Vehicle Details",
+        "image": "https://s7d9.scene7.com/is/image/Audiusastaging/audi-lifestyle-014?wid=430&fit=constrain"
+      }, {
+        "title": "Exclusive benefits API",
+        "image": "https://s7d9.scene7.com/is/image/Audiusastaging/audi-lifestyle-016?wid=430&fit=constrain"
+      }]
     }
-  }
+},
+{"tenantName": "Bugatti",
+  "tenantId": "002",
+  "msg": "msg from Data API for element config",
+    "details":  {
+      "bannerheading": "Explore myBugatti",
+      "bannersData": [{
+        "title": "Bugatti Account Management",
+        "image":  "https://s7d9.scene7.com/is/image/Audiusastaging/audi-lifestyle-015?wid=307&fit=constrain"
+      }, {
+        "title": "Bugatti Vehicle Details",
+        "image": "https://s7d9.scene7.com/is/image/Audiusastaging/audi-lifestyle-014?wid=430&fit=constrain"
+      }, {
+        "title": "Bugatti Exclusive benefits",
+        "image": "https://s7d9.scene7.com/is/image/Audiusastaging/audi-lifestyle-016?wid=430&fit=constrain"
+      }]
+    }
+}
+]
