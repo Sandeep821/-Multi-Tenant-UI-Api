@@ -12,6 +12,19 @@
       }, {
         "title": "Exclusive benefits API",
         "image": "https://s7d9.scene7.com/is/image/Audiusastaging/audi-lifestyle-016?wid=430&fit=constrain"
+      }],
+      "carouselData": [{
+        "title": "Audi Account Management",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "image":  "https://s7d9.scene7.com/is/image/Audiusastaging/2018-Audi-R8-Spyder-Tango-Red?wid=1332&hei=685"
+      }, {
+        "title": "Audi Vehicle Details",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "image": "https://s7d9.scene7.com/is/image/Audiusastaging/2018-Audi-R8-Spyder-Mythos-Black?wid=1332&hei=685"
+      }, {
+        "title": "Audi Exclusive benefits",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "image": "https://s7d9.scene7.com/is/image/Audiusastaging/2018-Audi-R8-Spyder-Vegas-Yellow?wid=1332&hei=685"
       }]
     }
 },
@@ -22,13 +35,22 @@
       "bannerheading": "Explore myBugatti",
       "bannersData": [{
         "title": "Bugatti Account Management",
-        "image":  "https://s7d9.scene7.com/is/image/Audiusastaging/audi-lifestyle-015?wid=307&fit=constrain"
+        "image":  "https://assets.bugatti.com/fileadmin/_processed_/sei/p2/se-image-3b0ce56beee42f1b3db2b68d51a65113.webp"
       }, {
         "title": "Bugatti Vehicle Details",
-        "image": "https://s7d9.scene7.com/is/image/Audiusastaging/audi-lifestyle-014?wid=430&fit=constrain"
+        "image": "https://assets.bugatti.com/fileadmin/_processed_/sei/p2/se-image-994f74ed4a1fb860e3f22da5181c0ae7.webp"
       }, {
         "title": "Bugatti Exclusive benefits",
-        "image": "https://s7d9.scene7.com/is/image/Audiusastaging/audi-lifestyle-016?wid=430&fit=constrain"
+        "image": "https://assets.bugatti.com/fileadmin/_processed_/sei/p2/se-image-83c1d424531ca918f179f834d06bdc84.webp"
+      }],
+      "carouselData": [{
+        "title": "Bugatti Account Management",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "image":  "https://s.aolcdn.com/commerce/autodata/images/USC10BGC011A0101.jpg"
+      }, {
+        "title": "Bugatti Vehicle Details",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "image": "https://cdn1.droom.in//uploads/category/bugatti/20171201070946000000-5351383923797548033.png"
       }]
     }
 }
