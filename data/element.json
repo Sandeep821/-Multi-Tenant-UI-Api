@@ -16,15 +16,15 @@
       "carouselData": [{
         "title": "Audi Account Management",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "image":  "https://s7d9.scene7.com/is/image/Audiusastaging/2018-Audi-R8-Spyder-Tango-Red?wid=1332&hei=685"
+        "image":  "https://s3.us-east-2.amazonaws.com/multi-tenant-media/2018-Audi-R8-Spyder-Mythos-Black.jfif"
       }, {
         "title": "Audi Vehicle Details",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "image": "https://s7d9.scene7.com/is/image/Audiusastaging/2018-Audi-R8-Spyder-Mythos-Black?wid=1332&hei=685"
+        "image": "https://s3.us-east-2.amazonaws.com/multi-tenant-media/2018-Audi-R8-Spyder-Mythos-Black.jfif"
       }, {
         "title": "Audi Exclusive benefits",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "image": "https://s7d9.scene7.com/is/image/Audiusastaging/2018-Audi-R8-Spyder-Vegas-Yellow?wid=1332&hei=685"
+        "image": "https://s3.us-east-2.amazonaws.com/multi-tenant-media/2018-Audi-R8-Spyder-Vegas-Yellow.jfif"
       }]
     }
 },
@@ -46,11 +46,11 @@
       "carouselData": [{
         "title": "Bugatti Account Management",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "image":  "https://s.aolcdn.com/commerce/autodata/images/USC10BGC011A0101.jpg"
+        "image":  "https://s3.us-east-2.amazonaws.com/multi-tenant-media/bugatti-blue-collage.png"
       }, {
         "title": "Bugatti Vehicle Details",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "image": "https://cdn1.droom.in//uploads/category/bugatti/20171201070946000000-5351383923797548033.png"
+        "image": "https://s3.us-east-2.amazonaws.com/multi-tenant-media/bugatti-veyron-png-2202.png"
       }]
     }
 }
