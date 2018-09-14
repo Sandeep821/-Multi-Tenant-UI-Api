@@ -1,11 +1,26 @@
 const express = require('express')
+const bodyParser= require('body-parser')
 const app = express()
-const path = require('path');
 
-
-var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+app.use(bodyParser.urlencoded({extended: true}))
+
+const path = require('path')
+
+// db conncet 
+// const MongoClient = require('mongodb').MongoClient
+
+// var db;
+
+// MongoClient.connect('mongodb://admin:admin123@ds257752.mlab.com:57752/multi-tenant-portal',{native_parser:true}, (err, client) => {
+//   if (err) return console.log(err)
+//   consol.log('client', client);
+//   db = client.db('multi-tenant-portal') // whatever your database name is
+//   app.listen(9000, () => {
+//     console.log('listening on 9000')
+//   })
+// })
+
 
 //data
 var styleConfig = require("./data/style.json");
@@ -14,7 +29,7 @@ var verbiageConfig = require("./data/verbiage.json");
 
  app.use(function(req, res, next) { res.header("Access-Control-Allow-Origin", "*"); res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); next(); });
 
-app.get('/', (req, res) => res.send('DEMO API!'))
+app.get('/', (req, res) =>  res.sendFile(__dirname + '/index.html'))
 
    app.get('/api/test', (req, res) =>{
     res.send({ 'express': 'Hello from data API' })
@@ -54,15 +69,6 @@ app.get('/', (req, res) => res.send('DEMO API!'))
     });
 
 
-    app.post('/api/users', function(req, res) {
-        var user_id = req.body.id;
-        var token = req.body.token;
-        var geo = req.body.geo;
-    
-        res.status(200).send(req.body)
-        console.log('posted');
-    });
-
     app.post('/api/post', function(req, res) {
         let data = {
             response: 'You sent: ' + req.body
@@ -72,6 +78,15 @@ app.get('/', (req, res) => res.send('DEMO API!'))
         console.log('posted', req.body);
         res.status(200).send(data);
     });
+
+    app.post('/quotes', (req, res) => {
+        db.collection('test').save(req.body, (err, result) => {
+            if (err) return console.log(err)
+        
+            console.log('saved to database')
+            res.redirect('/')
+          })
+      })
 
 
 app.listen(9000, () => console.log('Example app listening on port 9000!'))
