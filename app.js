@@ -8,18 +8,17 @@ app.use(bodyParser.urlencoded({extended: true}))
 const path = require('path')
 
 // db conncet 
-// const MongoClient = require('mongodb').MongoClient
+ const MongoClient = require('mongodb').MongoClient
 
-// var db;
-
-// MongoClient.connect('mongodb://admin:admin123@ds257752.mlab.com:57752/multi-tenant-portal',{native_parser:true}, (err, client) => {
-//   if (err) return console.log(err)
-//   consol.log('client', client);
-//   db = client.db('multi-tenant-portal') // whatever your database name is
-//   app.listen(9000, () => {
-//     console.log('listening on 9000')
-//   })
-// })
+const mongoUrl = 'mongodb://admin:admin123@ds257752.mlab.com:57752/multi-tenant-portal';
+MongoClient.connect(mongoUrl,{native_parser:true}, (err, client) => {
+  if (err) return console.log('-ERROR-',err)
+  consol.log('client', client);
+  let db = client.db('multi-tenant-portal') 
+  app.listen(9000, () => {
+    console.log('listening on 9000')
+  })
+})
 
 
 //data
@@ -67,7 +66,6 @@ app.get('/', (req, res) =>  res.sendFile(__dirname + '/index.html'))
         });
         return  res.status(200).json(verbiageDataResult);
     });
-
 
     app.post('/api/post', function(req, res) {
         let data = {
